@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    background-color: #A4A2A7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    background-color: #ffffff;
+    padding: 30px 15px 30px 15px;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.head button {
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.fa-sharp {
+    padding: 4px;
+    font-weight: bold;
+}
+
+.content form {
+    display: block;
+}
+
+.content label {
+    color: #A4A2A7;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content input {
+    border: 0.1px solid #A4A2A7;
+    border-radius: 0.3rem;
+    height: 4.6vh;
+    width: 63vh;
+    margin-bottom: 1rem;
+}
+
+input:hover {
+    outline: 2px solid #1E082C;
+}
+
+.i-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0.1px solid #A4A2A7;
+    border-radius: 0.3rem;
+    height: 4.6vh;
+    width: 63vh;
+    margin-bottom: 1rem;
+}
+
+.i-image input {
+    border: none;
+    height: 4.6vh;
+    width: 63vh;
+    margin-bottom: 1rem; 
+}
+
+.i-image img {
+    height: 3vh;
+    width: 3vh;
+    float: right;
+    padding: 0.1rem;
+}
+
+.i-image button {
+    border-radius: 0.2rem;
+    border: none;
+    height: 3vh;
+    width: 4vh;
+    margin: 0.3rem;
+}
+
+.expire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.expire input {
+    height: 4.6vh;
+    width: 30vh;
+}
+
+.last-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.last-part p {
+    color: #A4A2A7;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.button1 {
+    border-radius: 1.5rem;
+    border: 1px solid #A4A2A7;
+    font-weight: 600;
+    height: 5vh;
+    width: 4rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.button2 {
+    border-radius: 1.5rem;
+    border: 1px solid #A4A2A7;
+    font-weight: 600;
+    height: 5vh;
+    width: 7rem;
+    text-align: center;
+    background-color: #1E082C;
+    color: #ffffff;
+}
+
+/* media query */
+@media only screen and (max-width: 1024px) {
+    .content input {
+        width: 53vh;
+    }
+
+    .i-image {
+        width: 53vh;
+    }
+
+    .i-image input {
+        width: 53vh;
+    }
+
+    .expire input {
+        width: 26vh;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .content input {
+        width: 67vh;
+    }
+
+    .i-image {
+        width: 67vh;
+    }
+
+    .i-image input {
+        width: 67vh;
+    }
+
+    .expire input {
+        width: 30vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 400px;
+    }
+
+    .content label {
+        font-size: 10px;
+    }
+
+    .content input {
+        width: 56.5vh;
+    }
+
+    .i-image {
+        width: 56.5vh;
+    }
+
+    .i-image input {
+        width: 56.5vh;
+    }
+
+    .expire input {
+        width: 26vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        width: 300px;
+    }
+
+    .content input {
+        width: 43vh;
+    }
+
+    .i-image {
+        width: 43vh;
+    }
+
+    .i-image input {
+        width: 43vh;
+    }
+
+    .expire input {
+        width: 20.5vh;
+    }
+
+    .last-part p {
+        font-size: 10px;
+    }
+
+    .button1 {
+        font-size: 10px;
+        height: 4vh;
+        width: 3rem;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    .button2 {
+        font-size: 10px;
+        height: 4vh;
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .wrapper {
+        width: 250px;
+        height: 300px;
+    }
+
+    .content input {
+        width: 36vh;
+    }
+
+    .i-image {
+        width: 36vh;
+    }
+
+    .i-image input {
+        width: 36vh;
+    }
+
+    .expire input {
+        width: 17vh;
+    }
+
+}

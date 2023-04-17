@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Modal Assignment</title>
+</head>
+<body>
+    <section id="container">
+        <div class="wrapper">
+        <div class="content">
+            <div class="head">
+            <h3>Edit payment method</h3>  
+            <button><i class="fa-sharp fa-solid fa-x"></i></button>
+            </div>
+            <form>
+                <label>Card holder*</label>
+                <input type="text" required="true">
+                <label>Credit/debit card number*</label>
+                <div class="i-image">
+                <input type="number" required="true">
+                <button><img src="./assets/images/icons8-mastercard-logo-48.png"></button>
+                </div>
+                <div class="expire">
+                    <div>
+                    <label>Expiration month and year*</label>
+                    <input type="text" required="true">
+                    </div>
+                    <div>
+                    <label>CVV*</label>
+                    <input type="number" required="true">
+                    </div>
+                </div>
+            </form>
+            <div class="last-part">
+                <p>*This field is mandatory</p>
+                <button class="button1">Cancel</button>
+                <button class="button2">Update</button>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
