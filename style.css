@@ -260,19 +260,19 @@ input:hover {
     }
 
     .content input {
-        width: 36vh;
+        width: 32vh;
     }
 
     .i-image {
-        width: 36vh;
+        width: 32vh;
     }
 
     .i-image input {
-        width: 36vh;
+        width: 32vh;
     }
 
     .expire input {
-        width: 17vh;
+        width: 15vh;
     }
 
 }
